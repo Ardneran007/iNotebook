@@ -19,21 +19,22 @@ const AddNote = () => {
 
   return (
     <div>
-        <div className="container my-3">
+        <div className="container my-3" style={{"backgroundColor":"#F9F9F9"}}>
                 <h2>Add a Note</h2>
                 <form className="my-3">
                     <div className="mb-3">
-                        <label for="exampleInputEmail1" className="form-label">Title</label>
+                        <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
                         <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange={onChange}/>
                     </div>
                     <div className="mb-3">
-                        <label for="description" className="form-label">Description</label>
+                        <label htmlFor="description" className="form-label">Description</label>
                         <input type="text" className="form-control" id="description" name="description" onChange={onChange} />
                     </div>
-                    <div className="mb-3 form-check">
-                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                        <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div className="mb-3">
+                        <label htmlFor="tag" className="form-label">Tag</label>
+                        <input type="text" className="form-control" id="tag" name="tag" onChange={onChange} />
                     </div>
+
                     <button type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
                 </form>
             </div>

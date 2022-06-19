@@ -11,7 +11,7 @@ function Navbar() {
     
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg  navbar-light "  style={{"backgroundColor":"#D3EBCD"}}>
         <a className="navbar-brand" href="/">
             iNotebook
         </a>
