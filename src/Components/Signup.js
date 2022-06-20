@@ -36,6 +36,7 @@ const Signup = (props) => {
 
   return (
     <div className="container my-4">
+        <h2>Create an account to use iNotebook</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Name</label>
@@ -48,11 +49,8 @@ const Signup = (props) => {
             aria-describedby="emailHelp"
             placeholder="Enter Name"
           />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
         </div>
-        <div className="form-group">
+        <div className="form-group my-2">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input
             onChange={onChange}
